@@ -1,0 +1,25 @@
+<!-- Creating custom components -->
+<!-- 💯 using a custom component with React.createElement -->
+<!-- http://localhost:3000/isolated/final/04.extra-1.html -->
+
+<body>
+  <div id="root"></div>
+  <script src="https://unpkg.com/react@latest/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@latest/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone@latest/babel.js"></script>
+  <script type="text/babel">
+    const element = React.createElement(Message, { children: "Hello World" });
+    // replace the previous line with JSX
+    // const element =  some JSX
+
+    // then try to rename the function Message into message
+    // Check that in that case it does NOT work!
+
+    function Message({ children }) {
+      return <div className="message">{children}</div>;
+    }
+
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    root.render(element);
+  </script>
+</body>
