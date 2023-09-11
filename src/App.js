@@ -9,10 +9,11 @@
 function App() {
     return (
       <div className="container">
+          hello world
 
           {/*tp-03*/}
-          {/*<MyFormFunction_03_init />*/}
-          {/*<MyFormFunction_03_init stringAttr="33" integerAttr={33}/>*/}
+          <MyFormFunction_03_init />
+                    {/*<MyFormFunction_03_init stringAttr="33" integerAttr={33}/>*/}
           {/*<MyFormFunction_03_step1 buttonTitle={'OKK'}/>*/}
           {/*<MyFormFunction_03_step2 buttonTitle={'OKK2'}/>*/}
           {/*<MyFormFunction_03_step3 buttonTitle={'OK3'}/>*/}
